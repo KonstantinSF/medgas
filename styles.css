@@ -39,6 +39,7 @@ main {
 #med_gas {
     display: flex;
     justify-content:center;
+    /* flex-wrap: wrap; */
 }
 #left_side {
     display: flex; 
@@ -53,8 +54,9 @@ main {
 }
 #about_us_text {
     text-align: center;
-    font-size: 1rem;
-    margin: auto 10rem;
+    max-width: 950px;
+    font-size: large;
+    margin: auto 3rem;
     padding: 1rem; 
     border: 1px solid black;
 }
@@ -74,21 +76,20 @@ main {
 
 .cards {
 display: flex;
-gap:17px;
+gap:20px;
 justify-content: center;
-align-content: center;
+flex-wrap: wrap;
 }
 .card {
     display: flex;
     flex-direction: column;
     /* border: 1px solid black; */
-    margin: 0.5rem; 
-    max-width: 356px; 
-    height: auto;
+    margin: 1rem; padding: 0.6rem; 
+    height: auto; width:20rem;
 }
 .card-picture>img {
     display: block;
-    height: 40px;
+    height: 50px;
     margin-top:0.25rem; 
     margin-left: auto;
     margin-right: auto; 
@@ -108,14 +109,11 @@ align-content: center;
 }
 #advantages {
     display: flex; 
-    flex-direction: row;
-    justify-content: space-around;
-    align-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 /*<GALARY>*/
-#project_done {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
@@ -141,11 +139,8 @@ align-content: center;
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
-  
   width: auto;
-  
   padding: 16px;
-  
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -167,7 +162,7 @@ align-content: center;
 /* Caption text */
 .text {
   color:black;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   word-break: break-all;
 }
 
